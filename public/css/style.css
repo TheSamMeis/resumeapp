@@ -1,0 +1,264 @@
+
+body{
+	background-image: url("../images/background.png");
+	background-attachment:fixed;
+		overflow:scroll;
+	background-color:red;
+	color:white;
+}
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+.color-bar-wide {
+
+background: url("../images/bg_color_bar.png") repeat-x;
+width: 100%;
+height: 3px;
+position: fixed;
+z-index: 99999;
+top: 0;
+}
+
+.signup-bar {
+
+zoom: 1;
+position: fixed;
+margin: 0;
+width: 100%;
+top: 0;
+left: 0;
+background: #009989;
+background-position: top;
+padding: 5px;
+text-align: left;
+height: 32px;
+z-index: 99969;
+
+
+}
+
+
+.wrapper {
+	background-color:rgba(0,0,0,.4);
+	width:900px;
+	margin: 20px auto;
+	height:2000px;
+	position:relative;
+	padding: 50px;
+	color:white;
+
+				}
+
+.personalinfo{
+width:900px;
+
+}
+
+.profilepicture img{
+	width:200px;
+	height: 200px;
+	float:left;
+	margin: 0px 20px 0px 10px;
+	border-bottom: 5px solid #009989;
+
+}
+
+.topinfo{
+	font-family: Arial;
+	font-size: 18px;
+	text-align: left;
+	width:600px;
+	float:left;
+
+}
+.topinfo ul{
+
+	list-style-type: none;
+	padding:0px;
+}
+
+.headercontent{
+
+		width:900px;
+		height:20px;
+	margin:  auto;
+	position:relative;
+	padding: 50px;
+	color:white
+
+
+}
+
+#name{
+	font-size: 40px;
+	font-weight: bold;
+
+}
+
+.topinfo. a{
+	margin: 10px;
+	float:left;
+}
+
+.sharebuttons { 
+
+	background-color: #000;
+	float:right;
+	text-align:center;
+	margin:7px;
+	
+	position:relative;
+	top:-55px;
+	padding: 5px 25px;
+	z-index: 99989;
+
+}
+.header{
+	font-size: 28px;
+	font-weight: bold;
+
+}
+.entry{
+
+	width:900px;
+	position:relative;
+	margin:15px;
+
+}
+
+.entrytitle{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#org{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.subentrybox{
+
+	width:150px;
+	float:left;
+}
+
+#role{
+
+	width:150px;
+	float:left;
+}
+
+
+
+.dateRange{
+
+
+	width:90px;
+	height:120px;
+	float:left;
+	border-right: 7px solid #FFF;
+}
+
+
+
+.workbox, .schoolbox, .awardbox {
+	width:780px;
+	padding: 15px 0px;
+	float:left;
+	background-color:black;
+}
+
+.workbox{
+	border-bottom: 5px solid #a3a948;
+
+}	
+
+.icon {
+
+	width:100px;
+	height:90px;
+	margin:10px;
+	background-image: images/work.png;
+	float:left;
+}
+
+.icon img{
+
+	height:70px;
+	margin:auto;
+
+}
+
+.infobox{
+		width:630px;
+		float:left;
+	}
+
+
+
+.responsbox{
+	width:400px;
+	float:left;
+}
+
+.schoolbox .responsbox ul{
+	list-style-type: none;
+}
+
+.location{
+	text-align: right;
+}
+
+
+
+.schoolbox{
+	border-bottom: 5px solid #ce1836;
+	
+}
+
+.awardbox{
+	border-bottom: 5px solid #f85931;
+
+
+}
+
+.skillbar{
+
+	background: #f85931;
+	height: 20px;
+	width: 250px;
+	padding:5px;
+
+}
+
+.category1, .category2, .category3{
+	font:15px;
+	float: left;
+
+}
+
+.sumYears{
+	font:15px;
+	float:right;
+
+}
+
+.skillsDropdown{
+
+}
+
+.title{
+
+}
+
+.experience1, .experience2, .experience3, {
+
+}
+
+
+
+

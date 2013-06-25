@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+
+		<link rel="stylesheet" href="css/signupstyle.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '567651456612607',                        // App ID from the app dashboard
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+	function cb_login(response) {
+   if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+     	$('#name').val(response.name);
+       console.log(response);
+     });
+   } else {
+     console.log('User cancelled login or did not fully authorize.');
+   }
+ }
+ FB.login(cb_login, {
+ 	scope : 'email, user_likes'
+ });
+    // Additional initialization code such as adding Event Listeners goes here
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<form>
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="e.g. John Smith" />
+                </li>
+                <li>
+                    <label for="degree">BS Degree</label>
+                    <input id="degree" type="checkbox" />
+                </li>
+                <li>
+                    <label for="summary">Bio</label>
+                    <textarea id="summary"></textarea>
+                </li>
+                <li>
+                    <label for="dob">Birth Date</label>
+                    <input id="dob" type="date" />
+                </li>
+                <li>
+                    <label for="favcolor">Favorite Color</label>
+                    <input id="favcolor" type="color" />
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" />
+                </li>
+                <li>
+                    <label for="ready">Are you ready?</label>
+                    <select id="ready">                        <!-- requires children - <options> -->
+                        <option value="0">Yup</option>
+                        <option value="1">Nope</option>
+                     </select>
+                </li>
+                <li>
+                    <input type="submit" value="save &amp; continue" />
+                </li>
+  </ul>
+
+</form>
+</body>
+</html>

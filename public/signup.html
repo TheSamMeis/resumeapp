@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+        <link rel="stylesheet" href="css/normalize.css">
+	
+		<link rel="stylesheet" href="css/bootstrap.css">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+	</head>
+	 <body style="margin:15px;">
+      <form id="userDataForm">
+          <fieldset>
+              <legend>Personal Information</legend>
+              <label for "signup_name">Name</label>
+              <input id="firstName" type="text" placeholder="First Name" />  <input id="lastName" type="text" placeholder="Last Name" />
+              <span class="help-block"></span>
+
+           </fieldset>
+                
+            <fieldset>
+                <legend>How do employers get ahold of you?</legend> 
+                
+                <label for "signup_email">Email Address</label>    <input id="signup_email" type="text" placeholder=" e.g. youremail@gmail.com" />
+
+                 <label for "signup_phone">Phone Number</label>    <input id="signup_phone" type="text" placeholder="1234567890" />
+             
+
+
+                <label for "signup_address">Address</label>
+                <div>
+                    <input id="signup_address" class="input-large" type="text" placeholder="Street Address" />
+                    <input id="signup_aptNo" class="input-large" type="text" placeholder="Appartment or Suite Number" />
+                </div>
+                <div>
+                    <input id="signup_city" type="text" class="input-large" placeholder="City" />
+                    <input id="signup_state" class="input-small" type="text" placeholder="State" />
+                    <input id="signup_zip" type="text" class="input-small" placeholder="Zipcode" />
+                </div>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>  Where did you go to school?</legend>
+                <div class='education_block'>
+                        <label> School</label>
+                        <input type="text" class="schools_id" placeholder="e.g. Harvard" />
+                        <label>Degree</label>
+                         <input type="text" class="schools_degree" placeholder="BA in Science" /> 
+                         <label>Major</label>
+                         <input type="text" class="schools_major"placeholder="e.g. MIS" /> 
+                          <label>Minor</label>
+                         <input type="text" class="schools_minor" placeholder="e.g. Design" /> 
+                         <label>GPA</label>
+                         <input type="text" class="schools_gpa"  placeholder="e.g. 4.0" /> 
+                       <label>Start Date</label>
+                         <input type="date" class="schools_sdate"  /> 
+                         <label>End Date</label>
+                         <input type="date" class="schools_edate"   /> 
+                     </div>
+                     <span class="help_block">
+                        <a href="#" class="education_block_add">
+                                    Add another school
+                        </a>
+                    </span>
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend> Experience </legend>
+                <div class='exp_block'>
+                        <label> Organization </label>
+                        <input type="text" class="exp_org" placeholder="e.g. Google" />
+                        
+                        <label>Role</label>
+                        <input type="text" class="exp_role" placeholder="e.g. CEO" /> 
+                        
+                        <label>Project</label>
+                        <input type="text" class="exp_project" placeholder="World Takeover" /> 
+                        
+                        <label>Location</label>
+                        <input type="text" class="exp_location" placeholder="e.g. Phoenix, AZ" /> 
+                        
+                        <label>Start Date</label>
+                        <input type="date"  class="exp_sdate"/> 
+                        
+                        <label>End Date</label>
+                        <input type="date" class="exp_edate" /> 
+                        
+                      
+                            <label> Responsibilites</label>
+                            
+                            <div class="res1">
+                                <input class="res1" type="text" placeholder="Coloring inside the lines">
+                            </div>
+                            
+                            <div class="res2">
+                                 <input class="res2" type="text" placeholder=" Taking over the word"/>
+                            </div>
+                             
+                            <div class="res3">
+                                <input class="res3" type="text" placeholder="Managing 100 munchkins"/>
+                            </div>
+                        
+                     </div>          
+                 
+                     <span class="help_block">
+                        <a href="#" class="exp_block_add">
+                            Add another experience
+                        </a>
+                    </span>
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Skills </legend>
+                <div class='skills_block'>
+                    <label style="font-weight:bold; font-size: 20px;">Skill Name</label>
+                    <input type="text" placeholder="e.g. Google" />
+                    
+                    <label>Category</label>
+                    <input type="text" placeholder="e.g. CEO" /> 
+                    
+                    <label>Years Experience</label>
+                    <input type="text" placeholder="World Takeover" /> 
+                </div>
+                                     
+                <span class="help_block">
+                    <a href="#" class="skills_block_add">
+                        Add another skill
+                    </a>
+                </span>
+
+            </fieldset>
+
+
+                <fieldset>
+                <legend> Accomplishments and Awards </legend>
+               
+               <div class='acc_block'>
+                    <label>Accomplishment Name</label>
+                    <input type="text" placeholder="Name of your Accomplishment or Award" />
+                    
+                    <label>Description</label>
+                    <textarea rows="3" placeholder="Describe your award or accomplishment."></textarea>
+                    
+                    <label>Date</label>
+                    <input type="date" /> 
+                </div>
+                  
+                <span class="help_block">
+                    <a href="#" class="acc_block_add">
+                        Add another accomplishment or award.
+                    </a>
+                    </span>
+
+            </fieldset>
+
+
+
+
+
+              <span class="help-block">Your name is your primary identifie, blah blah blah</span>
+
+
+
+
+
+
+
+
+              <button type="submit" class="btn">Save &amp; Continue</button>
+
+
+           
+
+
+
+        
+        </form>
+    </body>
+</html>
