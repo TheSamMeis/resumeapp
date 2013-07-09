@@ -101,9 +101,9 @@ $(document).ready(function() {
 
 					date = fullAccFormattedDate + "-" + formattedAccMonth;
 				
-					boxes[date]=  
+					boxes[date]=  " <div class='entry clearfix'>"
 							
-							 "<div class='dateRange'>" 
+							+ "<div class='dateRange'>" 
 							+ fullAccFormattedDate
 							+ "</div>"
 							+ "<div class='awardbox clearfix'>" 
@@ -145,7 +145,7 @@ $(document).ready(function() {
 				
 					boxes[date]=  " <div class='entry clearfix'>"
 									+ "<div class='dateRange'>" 
-									// + formattedSchoolStartDate + "-" + formattedSchoolEndDate
+									 + fullSchoolFormattedDate 
 									+ "</div>"
 									+ "<div class='schoolbox clearfix'>" 
 									+ "<div class='icon'>"
@@ -166,13 +166,13 @@ $(document).ready(function() {
 				
 			}
 
-			dates.sort();
+			dates.sort().reverse();
 
 			
 
 		// for(k=0; k<r.accomplishments.length + r.experience.length + r.schools.length; k++){
 			for(k=0; k<dates.length; k++){
-			$('#exheader').append(boxes[dates[k]]);				
+			$('#entrywrapper').append(boxes[dates[k]]);				
 				
 				// console.log(dates);
 			}
@@ -184,14 +184,15 @@ $(document).ready(function() {
 
 				var category = r.skill[n].category; 
 				var specific_skill = r.skill[n].title; 
-				var years_experience = r.skill[n].experience; 				
+				var years_experience = r.skill[n].experience; 	
 
-				$('#skillHeader ').append( "<div class='skillBox clearfix'><div class='skillBar'>" + specific_skill + "</div>");
-				$('#categoryHeader').append( "<div class='skillBox clearfix'><div class='categoryBar'>" + category + "</div>");	
-				$('#yearHeader').append( "<div class='skillBox clearfix'><div class='yearBar'>" + years_experience + "</div>");		
 
-		
 
+				$('#skillHeader').append( "<div class='skillBox clearfix'><div class='skillBar'>" + specific_skill + "</div>");
+	
+				// $('#skillHeader').append('<img src="//chart.googleapis.com/chart?chf=c,s,67676700&chxr=0,0,5&chxs=0,000000,11.5,0,_,000000&chxt=x&chbh=10,0,0&chs=426x40&cht=bhs&chco=3E02F0&chds=0,5&chd=t:' + years_experience + '&chma=0,5" width="426" height="40" alt="" />');
+				// $('#skillHeader').append('<img src="//chart.googleapis.com/chart??chf=bg,s,FF990000|c,s,67676700&chxt=x&chbh=a&chs=440x220&cht=bhs&chco=FFCC33,C6D9FD&chds=0,160,0,160&chd=t:' + years_experience + ' &chma=0,5" width="440" height="40" alt="" />');
+				$('#skillHeader').append("<div class='dateRange' style='height:30px; border-right: 0px '>" +years_experience+  ' years </div> <img src="//chart.googleapis.com/chart?chf=bg,s,FF990000|c,s,67676700&chxr=0,-3.333,155&&chxs=0,67676700,10.833,0,_,676767&chxt=x&chbh=80&chs=440x40&cht=bhs&chco=FFCC33,C6D9FD&chds=0,20,0,160&chd=t1:' + years_experience +' " width="440" height="220" alt="" />');
 			}			
 		}
 	});		

@@ -139,12 +139,12 @@ $(document).ready(function() {
 			
 			$.ajax({
 				type: 'POST', 
-				url:'/api/resumes',  
+				url: '/',  
 				data: postData
 
 			});
 			
-			console.log(userData);
+			// console.log(userData);
 			console.log(postData);
 			return false;
 
@@ -154,4 +154,4 @@ $(document).ready(function() {
 
 
 
-}; 
+}); 

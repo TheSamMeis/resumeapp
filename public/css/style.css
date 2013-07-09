@@ -1,4 +1,5 @@
 
+
 body{
 	background-image: url("../images/background.png");
 	background-attachment:fixed;
@@ -46,7 +47,6 @@ z-index: 99969;
 	background-color:rgba(0,0,0,.4);
 	width:900px;
 	margin: 20px auto;
-	height:2000px;
 	position:relative;
 	padding: 50px;
 	color:white;
@@ -55,6 +55,7 @@ z-index: 99969;
 
 .personalinfo{
 width:900px;
+margin-bottom: 15px;
 
 }
 
@@ -110,7 +111,7 @@ width:900px;
 	float:right;
 	text-align:center;
 	margin:7px;
-	
+
 	position:relative;
 	top:-55px;
 	padding: 5px 25px;
@@ -120,13 +121,19 @@ width:900px;
 .header{
 	font-size: 28px;
 	font-weight: bold;
+	margin-bottom: 15px
 
 }
 .entry{
 
 	width:900px;
 	position:relative;
-	margin:15px;
+	margin: 0 15px 0px 15px;
+
+}
+
+.skillContainer{
+	margin: 15px;
 
 }
 
@@ -135,10 +142,12 @@ width:900px;
 	font-weight: bold;
 }
 
-#org{
+#org, .schooltitle, .awardtitle{
 	font-size: 20px;
 	font-weight: bold;
 }
+
+
 
 .subentrybox{
 
@@ -158,7 +167,7 @@ width:900px;
 
 
 	width:90px;
-	height:120px;
+	height:200px;
 	float:left;
 	border-right: 7px solid #FFF;
 }
@@ -168,6 +177,7 @@ width:900px;
 .workbox, .schoolbox, .awardbox {
 	width:780px;
 	padding: 15px 0px;
+	margin: 0px 0px 0px 15px;
 	float:left;
 	background-color:black;
 }
@@ -217,7 +227,7 @@ width:900px;
 
 .schoolbox{
 	border-bottom: 5px solid #ce1836;
-	
+
 }
 
 .awardbox{
@@ -258,7 +268,3 @@ width:900px;
 .experience1, .experience2, .experience3, {
 
 }
-
-
-
-
