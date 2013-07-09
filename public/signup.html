@@ -2,26 +2,38 @@
 <html lang="en">
 	<head>	
         <link rel="stylesheet" href="css/normalize.css">
-	
 		<link rel="stylesheet" href="css/bootstrap.css">
     
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-
-
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/signup.js"></script>
 	</head>
-	 <body style="margin:15px;">
+	
+     <body style="margin:15px;">
       <form id="userDataForm">
           <fieldset>
-              <legend>Personal Information</legend>
-              <label for "signup_name">Name</label>
-              <input id="firstName" type="text" placeholder="First Name" />  <input id="lastName" type="text" placeholder="Last Name" />
-              <span class="help-block"></span>
+            <legend>Personal Information</legend>
+            <label for "signup_name">Name</label>
+            <input id="firstName" type="text" placeholder="First Name" />  
+            <input id="lastName" type="text" placeholder="Last Name"/>
+             <label >Twitter</label>
+            <div class="input-prepend">
+                <span class="add-on">@</span>
+                <input class="twitter" id="prependedInput" type="text" placeholder="Username">
+            </div>   
 
-           </fieldset>
+            <label> LinkedIn </label>
+            <input id="linked_in" type="text" placeholder="URL"/>
+
+            <label> Website </label>
+            <input id="website" type="text" placeholder="URL"/>
+            
+            <span class="help-block"></span>
+
+            </fieldset>
                 
             <fieldset>
-                <legend>How do employers get ahold of you?</legend> 
+                <legend>Contact Information</legend> 
                 
                 <label for "signup_email">Email Address</label>    <input id="signup_email" type="text" placeholder=" e.g. youremail@gmail.com" />
 
@@ -57,9 +69,9 @@
                          <label>GPA</label>
                          <input type="text" class="schools_gpa"  placeholder="e.g. 4.0" /> 
                        <label>Start Date</label>
-                         <input type="date" class="schools_sdate"  /> 
+                         <input type="month" class="schools_sdate"  /> 
                          <label>End Date</label>
-                         <input type="date" class="schools_edate"   /> 
+                         <input type="month" class="schools_edate"   /> 
                      </div>
                      <span class="help_block">
                         <a href="#" class="education_block_add">
@@ -87,23 +99,23 @@
                         <input type="text" class="exp_location" placeholder="e.g. Phoenix, AZ" /> 
                         
                         <label>Start Date</label>
-                        <input type="date"  class="exp_sdate"/> 
+                        <input type="month"  class="exp_sdate"/> 
                         
                         <label>End Date</label>
-                        <input type="date" class="exp_edate" /> 
+                        <input type="month" class="exp_edate" /> 
                         
                       
                             <label> Responsibilites</label>
                             
-                            <div class="res1">
+                            <div>
                                 <input class="res1" type="text" placeholder="Coloring inside the lines">
                             </div>
                             
-                            <div class="res2">
+                            <div>
                                  <input class="res2" type="text" placeholder=" Taking over the word"/>
                             </div>
                              
-                            <div class="res3">
+                            <div>
                                 <input class="res3" type="text" placeholder="Managing 100 munchkins"/>
                             </div>
                         
@@ -120,14 +132,14 @@
             <fieldset>
                 <legend> Skills </legend>
                 <div class='skills_block'>
-                    <label style="font-weight:bold; font-size: 20px;">Skill Name</label>
-                    <input type="text" placeholder="e.g. Google" />
+                    <label>Skill Name</label>
+                    <input type="text" class = "skill_name" placeholder="e.g. Google" />
                     
                     <label>Category</label>
-                    <input type="text" placeholder="e.g. CEO" /> 
+                    <input type="text" class = "skill_category" placeholder="e.g. CEO" /> 
                     
                     <label>Years Experience</label>
-                    <input type="text" placeholder="World Takeover" /> 
+                    <input type="text" class = "skill_years" placeholder="World Takeover" /> 
                 </div>
                                      
                 <span class="help_block">
@@ -144,13 +156,13 @@
                
                <div class='acc_block'>
                     <label>Accomplishment Name</label>
-                    <input type="text" placeholder="Name of your Accomplishment or Award" />
+                    <input type="text" class="acc_name" placeholder="Name of your Accomplishment or Award" />
                     
                     <label>Description</label>
-                    <textarea rows="3" placeholder="Describe your award or accomplishment."></textarea>
+                    <textarea rows="3" class="acc_des" type="text"placeholder="Describe your award or accomplishment."></textarea>
                     
                     <label>Date</label>
-                    <input type="date" /> 
+                    <input type="month" class="acc_date"  /> 
                 </div>
                   
                 <span class="help_block">
